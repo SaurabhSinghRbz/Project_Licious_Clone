@@ -136,7 +136,7 @@ button:hover {
     height: fit-content;
 }
 
-p {
-    margin-top: 5%;
+.swiper-slide>div>p {
+    margin-top: 8%;
     font-size: 13px;
 }
