@@ -1,0 +1,89 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#headBar {
+    background-color: rgb(212, 212, 212);
+    height: 25px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#headBar>p {
+    margin: 0px 8px;
+}
+
+
+
+/* NavBar styling starts from here --> */
+#navBar {
+    height: 12%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-left: none;
+    border-right: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#iconBox>img {
+    height: 39.23px;
+    width: 95px;
+    position: left;
+}
+
+#searchBox>input {
+    border: 0px solid grey;
+    border-radius: 5px;
+    background-color: #f5f4f4;
+    height: 40px;
+    width: 450px;
+    font-size: 15px;
+    background-image: url('./Images/icons/search_icon.svg');
+    background-repeat: no-repeat;
+    background-position: 98%;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+#searchBox>input:hover {
+    /* border: none; */
+    padding: 0px 15px;
+    cursor: pointer;
+    background-position: 95%;
+}
+
+#loginBox>button {
+    background: none;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cartBox>button {
+    background: none;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+span {
+    margin-left: 5px;
+    font-size: 12px;
+}
+
+button:hover {
+    color: rgb(248, 72, 102);
+    cursor: pointer;
+}
+
+/* NavBar styling end here ----*/
+
+
+/* CategoeryBox styling starts from here --> */
+#categoerybox {
+    height: 20%;
+    background-color: yellow;
+}
