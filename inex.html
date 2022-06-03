@@ -7,6 +7,7 @@
     <title> Order Meat Online - Buy Fresh &amp; High Quality Meat at Best Price on Licious </title>
     <link rel="shortcut icon" href="./Images/icons/liciousIcon.ico">
     <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -29,11 +30,9 @@
         <div id="locationBox">
             <img src="./Images/icons/location_icon.svg" alt="">
             <select name="" id="locationSelect">
-                <option value="">--Select address--</option>
+                <option value="">--Select Location--</option>
             </select>
         </div>
-
-
         <div id="searchBox">
             <input type="text" placeholder="Search for any delicious product">
         </div>
@@ -49,8 +48,89 @@
 
     <div id="categoeryBox">
 
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="./Images/icons/todayDeals.png" alt=""></div>
+                <div class="swiper-slide"><img src="./Images/icons/chicken.webp" alt=""></div>
+                <div class="swiper-slide"><img src="./Images/icons/fish&Seafood.webp" alt=""></div>
+                <div class="swiper-slide"><img src="./Images/icons/cart_icon.svg" alt=""></div>
+                <div class="swiper-slide"><img src="./Images/icons/todayDeals.png" alt=""></div>
+                <div class="swiper-slide"><img src="./Images/icons/todayDeals.png" alt=""></div>
+                <div class="swiper-slide"><img src="./Images/icons/todayDeals.png" alt=""></div>
+                <div class="swiper-slide"><img src="./Images/icons/todayDeals.png" alt=""></div>
+                <div class="swiper-slide"><img src="./Images/icons/todayDeals.png" alt=""></div>
+                <div class="swiper-slide"><img src="./Images/icons/todayDeals.png" alt=""></div>
+                <div class="swiper-slide"><img src="./Images/icons/todayDeals.png" alt=""></div>
+                <div class="swiper-slide"><img src="./Images/icons/todayDeals.png" alt=""></div>
+                <!-- ... -->
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <!-- <div class="swiper-scrollbar"></div> -->
+        </div>
 
     </div>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <script>
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            autoplay: {
+                delay: 3000,
+            },
+
+            // direction: 'horizontal',
+            // loop: true,
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // And if we need scrollbar
+            // scrollbar: {
+            //     el: '.swiper-scrollbar',
+            // },
+            breakpoints: {
+                // when window width is >= 320px
+                320: {
+                    slidesPerView: 2,
+                    spaceBetween: 20
+                },
+                // when window width is >= 480px
+                480: {
+                    slidesPerView: 3,
+                    spaceBetween: 30
+                },
+                // when window width is >= 640px
+                640: {
+                    slidesPerView: 10,
+                    spaceBetween: 1
+                }
+            }
+
+
+        });
+
+
+
+
+    </script>
+
 
 </body>
 

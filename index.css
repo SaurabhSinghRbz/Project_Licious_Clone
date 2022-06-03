@@ -23,17 +23,34 @@ body {
     border-left: none;
     border-right: none;
     display: flex;
-    justify-content: center;
+    /* justify-content: space-between; */
     align-items: center;
 }
 
+#iconBox {
+    margin-left: 5%;
+}
+
 #iconBox>img {
-    height: 39.23px;
-    width: 95px;
-    position: left;
+    height: 45px;
+    width: 100px;
+    /* margin-left: 0px; */
+}
+
+#locationBox {
+    margin-left: 3%;
+
+}
+
+#locationBox>select {
+    height: 25px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    background-color: #f5f4f4;
 }
 
 #searchBox>input {
+    margin-left: 15%;
     border: 0px solid grey;
     border-radius: 5px;
     background-color: #f5f4f4;
@@ -53,6 +70,10 @@ body {
     background-position: 95%;
 }
 
+#loginBox {
+    margin-left: 12%;
+}
+
 #loginBox>button {
     background: none;
     border: none;
@@ -62,6 +83,7 @@ body {
 }
 
 #cartBox>button {
+    margin-left: 100%;
     background: none;
     border: none;
     display: flex;
@@ -83,7 +105,23 @@ button:hover {
 
 
 /* CategoeryBox styling starts from here --> */
-#categoerybox {
+#categoeryBox {
     height: 20%;
     background-color: yellow;
+    /* display: flex; */
+    /* grid-template-columns: repeat(10, 1fr); */
+    /* width: auto; */
+    /* gap: 20px; */
+}
+
+.swiper {
+    height: 100%;
+    width: 100%;
+}
+
+.swiper-slide img {
+    width: 80%;
+    height: fit-content;
+    background-color: red;
+
 }
