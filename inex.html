@@ -46,7 +46,7 @@
     </div>
 
 
-    <div id="categoeryBox">
+    <div id="categoeryBox" class="swiper">
 
         <!-- Slider main container -->
         <div class="swiper">
@@ -54,81 +54,10 @@
             <div class="swiper-wrapper">
                 <!-- Slides -->
                 <div class="swiper-slide">
-                    <div>
-                        <div><img src="./Images/icons/todayDeals.png" alt=""></div>
-                        <p>todayDeals</p>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div>
-                        <div><img src="./Images/icons/chicken.webp" alt=""></div>
-                        <p>Chiken</p>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div>
-                        <div><img src="./Images/icons/fish&Seafood.webp" alt=""></div>
-                        <p>Fish & Seafood</p>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div>
-                        <div><img src="./Images/icons/readyToCook.png" alt=""></div>
-                        <p>Ready to Cook</p>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div>
-                        <div><img src="./Images/icons/prawns.png" alt=""></div>
-                        <p>Prawns</p>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div>
-                        <div><img src="./Images/icons/coldCuts.webp" alt=""></div>
-                        <p>ColdCuts</p>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div>
-                        <div><img src="./Images/icons/spreads.webp" alt=""></div>
-                        <p>Spreads</p>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div>
-                        <div><img src="./Images/icons/eggs.webp" alt=""></div>
-                        <p>Eggs</p>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div>
-                        <div><img src="./Images/icons/kebabs&Tandoor.png" alt=""></div>
-                        <p>Kebabs & Tandoor</p>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div>
-                        <div><img src="./Images/icons/combos.png" alt=""></div>
-                        <p>Combos</p>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div>
-                        <div><img src="./Images/icons/bestSeller.png" alt=""></div>
-                        <p>Best Sellers</p>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div>
-                        <div><img src="./Images/icons/snacks.png" alt=""></div>
-                        <p>Snacks</p>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div>
-                        <div><img src="./Images/icons/mutton.png" alt=""></div>
-                        <p>Mutton</p>
+                    <div><button onclick="changeImage1()">
+                            <div><img id="catButtImage1" src="./Images/subCategory/today'sDeals1.png" alt=""></div>
+                            <p id="catButt1">Today's Deals</p>
+                        </button>
                     </div>
                 </div>
 
@@ -137,14 +66,19 @@
                 <!-- ... -->
             </div>
             <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
+            <!-- <div class="swiper-pagination"></div> -->
 
             <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
+
 
             <!-- If we need scrollbar -->
             <!-- <div class="swiper-scrollbar"></div> -->
+        </div>
+        <div id="prevButton">
+            <div class="swiper-button-prev"></div>
+        </div>
+        <div>
+            <div class="swiper-button-next"></div>
         </div>
 
     </div>
