@@ -121,5 +121,27 @@ var subCategoryArr = [
 var subcatContainer = document.getElementsByClassName("swiper-wrapper")
 
 subCategoryArr.forEach(function (ele) {
-    var
+    var continer = document.createElement('div')
+    continer.className = "swiper-slide"
+
+    var box = document.createElement("div");
+    var butt = document.createElement("button")
+
+
+    var imgBox = document.createElement("div")
+
+    var img = document.createElement("img");
+    img.id = "catButtImage1"
+    img.src = ele.img1
+
+    var ptag = document.createElement("p")
+    ptag.id = "catButt1"
+    ptag.innerHTML = ele.para
+
+    imgBox.appendChild(img)
+    butt.appendChild(imgBox)
+    butt.appendChild(ptag)
+    box.appendChild(butt)
+    continer.appendChild(box)
+    document.querySelector(".swiper-wrapper").appendChild(continer)
 })
